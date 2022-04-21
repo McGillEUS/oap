@@ -1,0 +1,167 @@
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #9CDEB1, #51B4B8, #875E9A, #FBC674);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 20s ease infinite;
+	-moz-animation: Gradient 20s ease infinite;
+	animation: Gradient 20s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+/* Mobile */
+h1, h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	position: absolute;
+	top: 10%;
+	margin: 0 20px;
+	right: 0;
+	left: 0;
+	font-size:20px;
+	line-height:32px;
+}
+span#ha, span#ka {
+	border-bottom: dotted 4px #000;
+	-o-transition:0.6s;
+  -ms-transition:0.6s;
+  -moz-transition:0.6s;
+  -webkit-transition:0.6s;
+  transition:0.6s;
+	color:#000;
+}
+img#info{
+	height:40px;
+	width:40px;
+	margin:auto;
+	width:100%;
+	bottom:10%;
+	position:absolute;
+}
+/*Non-Mobile*/
+@media (min-width: 750px) {
+h1, h6 {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	text-align: center;
+	position: absolute;
+	top: 25%;
+	margin: 0 60px;
+	font-size:30px;
+	right: 0;
+	left: 0;
+	line-height:50px;
+}
+span#ha, span#ka {
+	border-bottom: dotted 4px #fff;
+	-o-transition:0.6s;
+  -ms-transition:0.6s;
+  -moz-transition:0.6s;
+  -webkit-transition:0.6s;
+  transition:0.6s;
+	color:#fff;
+}
+span#ka:hover, span#ha:hover{
+	color:#000;
+	border-bottom:dotted 4px #000;
+	-o-transition:0.6s;
+  -ms-transition:0.6s;
+  -moz-transition:0.6s;
+  -webkit-transition:0.6s;
+  transition:0.6s;
+}
+
+a img#info{
+	height:50px;
+	position:absolute;
+	width:97%;
+	bottom:14%;
+	margin:auto;
+	
+}
+
+
+h1 span span#pron {
+  color:#666;
+  position:absolute;
+  font-family:'Open Sans',sans-serif;
+  font-weight:600;
+  line-height:18px;
+  bottom:80%;
+  padding:5px 7px;
+margin-bottom:45px;
+  margin-left:-200px;
+  z-index:1;
+  font-size:14px;
+  border-radius:2px;
+  background:#fff;
+  visibility:hidden;
+  width:160px;
+  opacity:20%;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#clickto{
+font-family:'Open Sans Condensed', sans-serif;
+font-size:14px;
+font-weight:300;
+text-transform:uppercase;
+}
+/* pop-up text arrow */
+
+h1 span span#pron:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+}
+
+/* text pops up when icon is in hover state */
+
+h1 span:hover span#pron {
+  bottom:50px;
+  visibility:visible;
+  opacity:1;
+  
+}
+}
